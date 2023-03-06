@@ -1,0 +1,30 @@
+.Title {
+    margin: 0;
+    margin-left: 25px;
+    padding-top: 15px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    /* line-height: 83.8%; */
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+/*/// VIEWS ///*/
+
+@media only screen and (min-width: 767px) and (max-width: 1439px) {
+    .Title {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Title {
+        font-size: 100px;
+        line-height: 90px;
+    }
+}

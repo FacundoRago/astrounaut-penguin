@@ -1,0 +1,301 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.ClientWrap {
+    width: 275px;
+    height: 287px;
+    position: relative;
+    background: linear-gradient(to right, rgba(242, 65, 48, 0.19), rgba(38, 38, 38, 0));
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.Selected {
+	margin: 0 auto;
+}
+
+.NotSelected {
+	border-radius: 5px;
+}
+
+.ClientCard {
+    width: 275px;
+    height: 287px;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(
+        to top,
+        #2F2F2F 0%,
+        rgba(10, 9, 9, 0.74) 100%
+    );
+    box-shadow: -3px 4px 16px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.CardLogo {
+    margin: 15px 0 8px 0;
+}
+
+.CardTitle {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+
+    margin: 0;
+}
+
+.CardText {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #8C8C8C;
+
+    max-width: 180px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.MarketContainer {
+    width: 220px;
+    background-color: red;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.LeftSide {
+    float: left;
+    width: 100px;
+}
+
+.Line {
+    float: left;
+    width: 20px;
+    margin-top: 13px;
+}
+
+.NoneLine {
+    display: none;
+}
+
+.RightSide {
+    float: left;
+    width: 100px;
+}
+
+.MarketTitle {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: center;
+
+    color: #8C8C8C;
+
+    margin-bottom: 8px;
+}
+
+.MarketNum {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+
+    margin: 0 auto;
+}
+
+.PerWeek {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+
+    color: #8C8C8C;
+
+    margin-top: 2px;
+}
+
+.NoneWeek {
+    display: none;
+}
+
+.Square {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    transform: rotateY(0deg) rotate(45deg);
+    margin: 0 auto;
+}
+
+.VerticalLine {
+    width: 2px;
+    height: 35px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.CardFoot {
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 95px;
+}
+
+.NoneFoot {
+    display: none;
+}
+
+.Site {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 10px;
+
+    color: #F24130;
+    float: left;
+    width: 105px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.Site:hover {
+    text-decoration: none;
+    outline: none;
+    color: #2432C9;
+}
+
+.NoneSite {
+    display: none;
+}
+
+.Contract {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 8px;
+
+    color: #FFFFFF;
+    float: right;
+    width: 105px;
+
+    text-align: right;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+.Contract:hover {
+    color: #F24130;
+}
+
+.ContractLogo {
+    margin-left: 8px;
+}
+
+.Soon {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 30px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.NoneSoon {
+    display: none;
+}
+
+/*/////////////*/
+/*/// VIEWS ///*/
+/*/////////////*/
+
+/* TABLET */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+	.ClientWrap {
+        height: 300px;
+        padding: 3px;
+        border-radius: 15px;
+    }
+    .ClientCard {
+        height: 300px;
+        border-radius: 15px;
+    }
+    .CardLogo {
+        margin-top: 20px;
+    }
+}
+
+/* PC SMALL */
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.ClientWrap {
+        height: 320px;
+        padding: 3px;
+        border-radius: 15px;
+        transition: transform .2s;
+    }
+    .ClientWrap:hover {
+        transform: scale(1.1);
+    }
+    .ClientCard {
+        height: 320px;
+        border-radius: 15px;
+    }
+    .CardLogo {
+        margin: 30px auto 10px auto;
+    }
+    /* .Site {
+        color: #2432C9;
+    } */
+}
+
+/* PC LARGE */
+
+@media only screen and (min-width: 1440px) {
+	.ClientWrap {
+        height: 320px;
+        padding: 3px;
+        border-radius: 15px;
+        transition: transform .2s;
+    }
+    .ClientWrap:hover {
+        transform: scale(1.1);
+    }
+    .ClientCard {
+        height: 320px;
+        border-radius: 15px;
+    }
+    .CardLogo {
+        margin: 30px auto 10px auto;
+    }
+    /* .ClientWrap:hover > .Site {
+        color: #2432C9;
+    } */
+}

@@ -1,0 +1,304 @@
+/* //////// */
+/*  STYLES  */
+/* //////// */
+
+.Member {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.Penguin {
+    position: absolute;
+    width: 80px;
+    z-index: 3;
+}
+
+.Filter {
+    position: absolute;
+    width: 80px;
+    z-index: 3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.Info {
+    position: absolute;
+    z-index: 10;
+    animation: fadeIn 0.2s ease-in-out;
+    top: -10px
+}
+
+.Modal.open{
+    animation: bounce-in 1s ease-in;
+}
+.Modal.close{
+    animation: bounce-out 1s ease-in;
+}
+@keyframes bounce-in{
+    0%    {opacity: 0;   transform: scale(0.5);}
+    100%  {opacity: 1;   transform: scale(1);}
+}
+@keyframes bounce-out{
+    0%    {opacity: 1;   transform: scale(1);}
+    100%  {opacity: 0;   transform: scale(0.5);}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        display: inline-block;
+        transform: translateY(-2rem);
+    }
+    100% {
+        display: inline-block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+.Line {
+    position: absolute;
+    width: 100px;
+    height: 1.5px;
+    top: 110px;
+    left: -5px;
+
+    background: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.SecondLine {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    top: 160px;
+    left: 44.2px;
+
+    background: #FFFFFF;
+}
+
+.SecondLineLeft {
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    top: 159px;
+    left: 35px;
+
+    background: #FFFFFF;
+}
+
+.Circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 158.5px;
+    left: 51px;
+
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.CircleLeft {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 157.9px;
+    left: 32px;
+
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.Person {
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    top: 132px;
+    left: 60px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;    
+}
+
+.PersonLeft {
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    top: 131px;
+    margin-left: -29px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;    
+}
+
+.Job {
+    position: absolute;
+    width: 67px;
+    height: 20px;
+    top: 162px;
+    left: 52px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #F24130;
+}
+
+.JobLeft {
+    position: absolute;
+    width: 67px;
+    height: 20px;
+    top: 162px;
+    margin-left: -35px;
+
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center;
+
+    color: #F24130;
+}
+
+/* ///// */
+/* VIEWS */
+/* ///// */
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Penguin {
+        width: 160px;
+    }
+    .Filter {
+        width: 160px;
+    }
+    .Info {
+        top: 0px;
+    }
+    .Line {
+        width: 160px;
+        top: 180px;
+        left: -10px;
+    }
+    .SecondLine {
+        top: 259px;
+        left: 69.2px;
+    }
+    .SecondLineLeft {
+        top: 259px;
+        left: 60px;
+    }
+    .Circle {
+        top: 258px;
+        left: 79px;
+    }
+    .CircleLeft {
+        top: 258px;
+        left: 57px;
+    }
+    .Person {
+        top: 230px;
+        left: 88px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .PersonLeft {
+        top: 228px;
+        margin-left: -2px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .Job {
+        top: 265px;
+        left: 84px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .JobLeft {
+        top: 262px;
+        margin-left: -7px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Penguin {
+        width: 250px;
+    }
+    .Filter {
+        width: 250px;
+    }
+    .Info {
+        top: 0;
+    }
+    .Line {
+        width: 220px;
+        top: 250px;
+        left: 0px;
+    }
+    .SecondLine {
+        top: 360px;
+        left: 109px;
+    }
+    .SecondLineLeft {
+        top: 360px;
+        left: 100px;
+    }
+    .Circle {
+        top: 359px;
+        left: 118px;
+    }
+    .CircleLeft {
+        top: 359px;
+        left: 99px;
+    }
+    .Person {
+        top: 330px;
+        left: 129px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .PersonLeft {
+        top: 330px;
+        margin-left: 38px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .Job {
+        width: 75px;
+        top: 366px;
+        left: 118px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .JobLeft {
+        top: 365px;
+        margin-left: 33px;
+        font-size: 9px;
+        line-height: 10px;
+    }
+}

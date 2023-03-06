@@ -1,0 +1,338 @@
+/*////////////*/
+/*///STYLES///*/
+/*////////////*/
+
+.Container {
+    /* background-color: #1b1b1b; */
+    margin: 0;
+    width: 100%;
+    height: 600px;
+	align-items: center;
+    z-index: -4;
+}
+
+.UsContainer {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.Penguins {
+    position: relative;
+    margin: 0 auto;
+    width: 270px;
+    height: 180px;
+}
+
+.Background {
+    position: absolute;
+    margin: 10px 0 0 10px;
+    width: 230px;
+    height: 130px;
+    background: rgba(242, 65, 48, 0.64);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.BottomShadow {
+    position: absolute;
+    margin: 105px 0 0 -10px;
+    width: 300px;
+    height: 60px;
+    background: rgb(0, 0, 0);
+    filter: blur(15px);
+    border-radius: 50px;
+    z-index: 0;
+}
+
+.Facu {
+    position: absolute;
+    z-index: 3;
+    margin-left: 185px;
+    margin-top: 27px;
+}
+
+.Ale {
+    position: absolute;
+    z-index: 2;
+    margin-left: 150px;
+}
+
+.Flor {
+    position: absolute;
+    z-index: 4;
+    margin-top: 38px;
+    margin-left: 125px;
+}
+
+.Penguin {
+    position: absolute;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 88px;
+}
+
+.Mati {
+    position: absolute;
+    z-index: 1;
+    margin-left: 25px;
+}
+
+.Agus {
+    position: absolute;
+    z-index: 3;
+    margin-top: 38px;
+    margin-left: 50px;
+}
+
+.Diego {
+    position: absolute;
+    z-index: 2;
+    margin-top: 28px;
+    margin-left: -5px;
+}
+
+.TextContainer {
+    margin: 80px 0 0 0;
+}
+
+.WeMake {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-left: 25px;
+    width: 200px;
+    color: #F24130;
+}
+
+.OurTeam {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-left: 25px;
+    width: 200px;
+    color: #FFFFFF;;
+}
+
+.Button {
+    margin-left: 48%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes spin {
+	from { transform: rotate(180deg); }
+	to { transform: rotate(0deg); }
+}
+
+@keyframes spinOpen {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(180deg); }
+}
+
+.Img {
+	animation-name: spin;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    margin: 10px 0 10px 0;
+}
+
+.ImgOpen {
+	animation-name: spinOpen;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+    transform: rotate(180deg);
+    margin: 10px 0 10px 0;
+}
+
+.ButtonContainer {
+    width: 105px;
+    margin: 30px auto;
+}
+
+.PCText {
+    display: none;
+}
+
+/* ///// */
+/* VIEWS */
+/* ///// */
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container {
+        height: 900px;
+    }
+    .UsContainer {
+        margin-left: 40px;
+        text-align: left;
+    }
+    .Penguins {
+        margin-top: 50px;
+        width: 520px;
+        height: 280px;
+    }
+    .Background {
+        margin: 10px 0 0 20px;
+        width: 480px;
+        height: 220px;
+    }
+    .BottomShadow {
+        margin: 175px 0 0 -12px;
+        width: 510px;
+        height: 80px;
+        filter: blur(25px);
+    }
+    .Facu {
+        margin-left: 360px;
+        margin-top: 52px;
+    }
+    .Ale {
+        margin-left: 280px;
+    }
+    .Flor {
+        margin-top: 88px;
+        margin-left: 240px;
+    }
+    .Penguin {
+        margin-top: 0px;
+        margin-left: 175px;
+    }
+    .Mati {
+        margin-left: 65px;
+    }
+    .Agus {
+        margin-top: 88px;
+        margin-left: 110px;
+    }
+    .Diego {
+        margin-top: 55px;
+        margin-left: -5px;
+    }
+    .TextContainer {
+        width: 440px;
+        margin: 130px auto 0 auto;
+    }
+    .WeMake {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 0px;
+        width: 440px;
+    }
+    .OurTeam {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 0px;
+        width: 440px;
+    }
+    .Button {
+        margin-left: 48%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .Img {
+        width: 40px;
+    }
+    .ImgOpen {
+        width: 40px;
+    }
+    .Button {
+        margin-left: 46%;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+    .Container {
+        height: 900px;
+    }
+    .UsContainer {
+        margin-left: 0px;
+        text-align: left;
+    }
+    .Penguins {
+        margin-top: 50px;
+        width: 580px;
+        height: 280px;
+    }
+    .Background {
+        margin: 10px 0 0 -80px;
+        width: 700px;
+        height: 320px;
+    }
+    .BottomShadow {
+        margin: 265px 0 0 -130px;
+        width: 880px;
+        height: 130px;
+        filter: blur(25px);
+    }
+    .Facu {
+        margin-left: 432px;
+        margin-top: 85px;
+    }
+    .Ale {
+        margin-left: 310px;
+    }
+    .Flor {
+        margin-top: 120px;
+        margin-left: 245px;
+    }
+    .Penguin {
+        margin-top: 5px;
+        margin-left: 135px;
+    }
+    .Mati {
+        margin-left: -40px;
+    }
+    .Agus {
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+    .Diego {
+        margin-top: 82px;
+        margin-left: -140px;
+    }
+    .TextContainer {
+        display: none;
+    }
+    .ButtonContainer {
+        display: none;
+    }
+    .PCText {
+        display: block;
+    }
+    .PC {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-left: 30px;
+        width: 450px;
+        color: #C4C4C4;
+    }
+}
+
+/* PC LARGE */
+
+@media only screen and (min-width: 1440px) {
+    .Container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    .UsContainer {
+        margin-left: 110px;
+    }
+    .PC {
+        margin-left: 140px;
+        width: 450px;
+    }
+}
